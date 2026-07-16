@@ -231,18 +231,28 @@ footer a{
 }
 
 nav ul{
-    flex-direction:column;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav li{
+    margin:5px;
 }
 
 nav a{
+    padding:10px 12px;
     text-align:center;
+    font-size:14px;
 }
 
 .video-grid{
     justify-content:center;
 }
 
-  }
+}
+
+
 .dark-mode{
     background:#111;
     color:#fff;
