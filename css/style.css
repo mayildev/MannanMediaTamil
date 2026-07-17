@@ -16,11 +16,9 @@ body{
 /* ===== HEADER ===== */
 
 header{
-    background:#b30000;
-    color:#fff;
-    position:sticky;
-    top:0;
-    z-index:1000;
+    background:#c40000;
+    text-align:center;
+    padding:15px 20px;
 }
 
 .top-bar{
