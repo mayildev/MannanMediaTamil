@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mayildev.github.io/MannanMediaTamil/sitemap.xml
