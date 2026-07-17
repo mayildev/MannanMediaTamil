@@ -268,3 +268,46 @@ nav a{
 .dark-mode footer{
     background:#000;
 }
+.menu-btn{
+    display:none;
+    width:100%;
+    padding:15px;
+    background:#800000;
+    color:#fff;
+    border:none;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+    display:block;
+}
+
+#mobileMenu{
+    display:none;
+    background:#800000;
+}
+
+#mobileMenu.show{
+    display:block;
+}
+
+#mobileMenu ul{
+    display:block;
+}
+
+#mobileMenu li{
+    margin:0;
+}
+
+#mobileMenu a{
+    display:block;
+    padding:15px;
+    border-bottom:1px solid rgba(255,255,255,.15);
+    text-align:left;
+}
+
+}
