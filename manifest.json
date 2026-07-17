@@ -1,0 +1,21 @@
+{
+  "name": "Mannan Media",
+  "short_name": "Mannan",
+  "start_url": "/MannanMediaTamil/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#b30000",
+  "description": "Tamil News Portal by Mannan Media",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
