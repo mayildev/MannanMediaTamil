@@ -74,20 +74,6 @@ nav a:hover{
     background:#d40000;
 }
 
-/* ===== BREAKING NEWS ===== */
-
-.breaking-news{
-    background:#ffcc00;
-    padding:10px;
-    display:flex;
-    align-items:center;
-    font-weight:bold;
-}
-
-.breaking-news span{
-    margin-right:15px;
-    color:red;
-}
 
 /* ===== HERO ===== */
 
