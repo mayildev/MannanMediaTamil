@@ -45,6 +45,24 @@ header{
     cursor:pointer;
     font-size:18px;
 }
+.social-bar{
+    background:#0F3C7D;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    padding:10px;
+}
+
+.social-bar img{
+    width:32px;
+    height:32px;
+    transition:0.3s;
+}
+
+.social-bar img:hover{
+    transform:scale(1.15);
+}
 /* ===== NAVIGATION ===== */
 
 nav{
