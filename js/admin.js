@@ -1,41 +1,59 @@
-let newsList = [];
+import { auth, db } from "./firebase.js";
 
-function publishNews() {
+import {
+signInWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
 
-    const title = document.getElementById("title")?.value || "";
-    const category = document.getElementById("category")?.value || "";
-    const image = document.getElementById("image")?.value || "";
-    const content = document.getElementById("content")?.value || "";
+import {
+collection,
+addDoc,
+serverTimestamp
+} from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
 
-    if (!title || !category || !content) {
-        alert("Please fill all required fields.");
-        return;
-    }
+window.login = async function(){
 
-    const news = {
-        id: Date.now(),
-        title: title,
-        category: category,
-        image: image,
-        summary: content.substring(0,120) + "...",
-        content: content,
-        date: new Date().toLocaleDateString()
-    };
+const email=document.getElementById("email").value;
 
-    newsList.push(news);
+const password=document.getElementById("password").value;
 
-    localStorage.setItem("mannanNews", JSON.stringify(newsList));
+try{
 
-    alert("News saved successfully!");
+await signInWithEmailAndPassword(auth,email,password);
+
+alert("Login Successful");
+
+}catch(e){
+
+alert(e.message);
 
 }
 
-window.onload = function(){
+}
 
-    const saved = localStorage.getItem("mannanNews");
+window.publishNews = async function(){
 
-    if(saved){
-        newsList = JSON.parse(saved);
-    }
+const title=document.getElementById("title").value;
 
-};
+const content=document.getElementById("content").value;
+
+try{
+
+await addDoc(collection(db,"news"),{
+
+title:title,
+
+content:content,
+
+createdAt:serverTimestamp()
+
+});
+
+alert("News Published!");
+
+}catch(e){
+
+alert(e.message);
+
+}
+
+}
