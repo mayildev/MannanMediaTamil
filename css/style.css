@@ -16,36 +16,54 @@ body{
 /* ===== HEADER ===== */
 
 header{
-    padding:15px 0;
+    background:#0F3C7D;
+    padding:15px 20px;
+}
+
+.top-bar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+    flex-wrap:wrap;
 }
 
 .logo{
-    width:80px;
-    height:auto;
-    margin:10px auto;
-    display:block;
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
 
-header h1{
-    margin:8px 0 5px;
-    font-size:42px;
+.logo img{
+    width:70px;
+    height:70px;
 }
 
-header p{
-    margin:0 0 15px;
-    font-size:20px;
+.logo h1{
+    margin:0;
+    font-size:32px;
+    color:#fff;
+}
+
+.logo p{
+    margin:5px 0 0;
+    font-size:16px;
+    color:#ddd;
 }
 
 .search-box{
-    max-width:450px;
-    width:90%;
-    margin:0 auto 10px;
+    width:250px;
+    padding:10px;
+    border:none;
+    border-radius:6px;
 }
 
-.theme-btn{
-    margin:0 auto;
+#themeBtn{
+    padding:10px 14px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
 }
-
 /* ===== NAVIGATION ===== */
 
 nav{
