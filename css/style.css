@@ -14,37 +14,45 @@ body{
 }
 
 /* ===== HEADER ===== */
-
-header{
-    background:#0F3C7D;
-    padding:12px 20px;
-}
-
+/* Header */
 .top-bar{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding:15px 20px;
 }
 
+/* Logo */
 .logo img{
-    width:60px;
+    width:90px;      /* Medium size */
     height:auto;
 }
 
+/* Right side buttons */
 .header-icons{
     display:flex;
-    gap:10px;
+    align-items:center;
+    gap:12px;
 }
 
-#searchBtn,
-#themeBtn{
-    width:42px;
-    height:42px;
+/* Search Button */
+.search-btn{
+    width:48px;
+    height:48px;
+    font-size:24px;
     border:none;
-    border-radius:8px;
-    background:#ffffff;
+    border-radius:10px;
     cursor:pointer;
-    font-size:18px;
+}
+
+/* Theme Button */
+#themeBtn{
+    width:48px;
+    height:48px;
+    font-size:24px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
 }
 /* ===== NAVIGATION ===== */
 
