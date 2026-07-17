@@ -63,3 +63,8 @@ document.querySelectorAll("a[href^='#']").forEach(anchor => {
 });
 
 console.log("Mannan Media Loaded Successfully");
+function toggleMenu(){
+
+document.getElementById("mobileMenu").classList.toggle("show");
+
+}
