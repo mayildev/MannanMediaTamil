@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login - Mannan Media</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+}
+
+.login-container{
+    max-width:400px;
+    margin:80px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    text-align:center;
+}
+
+.logo{
+    width:90px;
+    margin-bottom:15px;
+}
+
+h2{
+    color:#0F3C7D;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    background:#0F3C7D;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0b2d5c;
+}
+
+#error{
+    color:red;
+    margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-container">
+
+<img src="images/logo.png" class="logo" alt="Logo">
+
+<h2>Mannan Media Admin</h2>
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="password" id="password" placeholder="Password">
+
+<button id="loginBtn">Login</button>
+
+<p id="error"></p>
+
+</div>
+
+<script type="module">
+
+import { auth } from "./js/firebase.js";
+
+import { signInWithEmail
