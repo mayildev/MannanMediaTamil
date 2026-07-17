@@ -17,52 +17,34 @@ body{
 
 header{
     background:#0F3C7D;
-    padding:15px 20px;
+    padding:12px 20px;
 }
 
 .top-bar{
     display:flex;
-    align-items:center;
     justify-content:space-between;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.logo{
-    display:flex;
     align-items:center;
-    gap:15px;
 }
 
 .logo img{
-    width:70px;
-    height:70px;
+    width:60px;
+    height:auto;
 }
 
-.logo h1{
-    margin:0;
-    font-size:32px;
-    color:#fff;
+.header-icons{
+    display:flex;
+    gap:10px;
 }
 
-.logo p{
-    margin:5px 0 0;
-    font-size:16px;
-    color:#ddd;
-}
-
-.search-box{
-    width:250px;
-    padding:10px;
-    border:none;
-    border-radius:6px;
-}
-
+#searchBtn,
 #themeBtn{
-    padding:10px 14px;
+    width:42px;
+    height:42px;
     border:none;
-    border-radius:6px;
+    border-radius:8px;
+    background:#ffffff;
     cursor:pointer;
+    font-size:18px;
 }
 /* ===== NAVIGATION ===== */
 
