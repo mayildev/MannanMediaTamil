@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Welcome to Mannan Media",
+    "category": "General",
+    "date": "2026-07-17",
+    "image": "images/main-news.jpg",
+    "summary": "Welcome to the official Mannan Media news portal.",
+    "content": "This is the first news article on Mannan Media. You can replace it with your own news."
+  },
+  {
+    "id": 2,
+    "title": "Tamil Nadu News",
+    "category": "Tamil Nadu",
+    "date": "2026-07-17",
+    "image": "images/news1.jpg",
+    "summary": "Latest updates from Tamil Nadu.",
+    "content": "Add your Tamil Nadu news here."
+  },
+  {
+    "id": 3,
+    "title": "Cinema Updates",
+    "category": "Cinema",
+    "date": "2026-07-17",
+    "image": "images/news2.jpg",
+    "summary": "Latest cinema news.",
+    "content": "Add your cinema news here."
+  }
+]
